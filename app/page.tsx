@@ -11,6 +11,7 @@ import rdx from '@/public/logos/redux.svg';
 import node from '@/public/logos/nodejs.svg';
 import mdb from '@/public/logos/mongodb.svg';
 import psql from '@/public/logos/postgresql.svg';
+import MyBlogs from '@/components/MyBlogs';
 
 export default function Home() {
   return (
@@ -18,7 +19,8 @@ export default function Home() {
       <Header />
       <main className="mx-auto w-full max-w-3xl px-4 pt-4 md:px-12 border-l border-r">
         <h1 className="text-3xl font-bold tracking-tight lg:text-5xl mt-3">
-          Hi! I&apos;m Yashwanth Kothakota
+          Hi! I&apos;m{' '}
+          <span className="text-[#617bff]">Yashwanth Kothakota</span>
         </h1>
         <div className="mt-10 flex items-center justify-center w-full gap-2">
           <div className="aspect-square w-1/2 overflow-hidden rounded-lg  shadow-lg transform hover:scale-105 transition-transform duration-200">
@@ -32,20 +34,25 @@ export default function Home() {
           </div>
           <div className="w-1/2 text-left p-2">
             <p className="leading-7">
-              I am a 2023 Computer Science Post Graduate from BITS Pilani. I
-              love developing software. I am proficient in Python, Javascript,
+              I am a 2023{' '}
+              <span className="text-[#ffe102]">Computer Science</span> Post
+              Graduate from <span className="text-[#617bff]">BITS Pilani</span>.
+              I love developing software. I am proficient in Python, Javascript,
               Typescript, SQL. Having very strong foundation of CS core like
               Data Structures and Algorithms, Operating Systems, DBMS, Computer
-              Networks help me to crack GATE. Experienced in Agile methodologies
-              and eager to contribute in fast paced development team. I am
-              actively looking for Software Developer roles.
+              Networks help me to crack GATE. Willing to learn new technologies.
+              Experienced in Agile methodologies and eager to contribute in fast
+              paced development team. I am actively looking for Software
+              Developer roles.
             </p>
           </div>
         </div>
         <div className="mt-10 border-t-2 p-4">
-          <h2 className="font-semibold text-2xl text-center mt-6">
-            Work Experience
-          </h2>
+          <div className="w-full flex items-center justify-center">
+            <h2 className="font-semibold text-2xl text-center mt-6 uppercase tracking-widest text-[#617bff] relative custom-curved-underline">
+              Work Experience
+            </h2>
+          </div>
           <p className="leading-7 mt-2">
             I worked as a Software Engineer Intern at Western Digital for 6
             months. I worked as an individual contributor. Developed an
@@ -67,22 +74,31 @@ export default function Home() {
           </p>
         </div>
         <div className="mt-6 p-6">
-          <h2 className="font-semibold text-2xl text-center">Core Skills</h2>
-          <div className="flex flex-wrap gap-3 items-center justify-center mt-3">
+          <div className="w-full flex items-center justify-center">
+            <h2 className="font-semibold text-2xl text-center uppercase tracking-widest text-[#617bff] relative custom-curved-underline">
+              Core Skills
+            </h2>
+          </div>
+          <div className="flex flex-wrap gap-3 items-center justify-center mt-4">
             <Image src={HTMl} alt="CSS" className="h-8 w-8" />
             <Image src={CSS} alt="CSS" className="h-8 w-8" />
             <Image src={JS} alt="CSS" className="h-8 w-8" />
             <Image src={TS} alt="CSS" className="h-8 w-8" />
-            <Image src={py} alt="CSS" className="h-8 w-8" />
-            <Image src={node} alt="CSS" className="h-8 w-8" />
             <Image src={rea} alt="CSS" className="h-8 w-8" />
             <Image src={rdx} alt="CSS" className="h-8 w-8" />
+            <Image src={node} alt="CSS" className="h-8 w-8" />
             <Image src={mdb} alt="CSS" className="h-8 w-8" />
             <Image src={psql} alt="CSS" className="h-8 w-8" />
+            <Image src={py} alt="CSS" className="h-8 w-8" />
           </div>
         </div>
         <div className="mt-6 p-6">
-          <h2 className="font-semibold text-2xl text-center">My Blogs</h2>
+          <div className="w-full flex items-center justify-center">
+            <h2 className="w-fit font-semibold text-2xl text-center mb-6 uppercase tracking-widest text-[#617bff] relative custom-curved-underline">
+              My Blogs
+            </h2>
+          </div>
+          <MyBlogs />
         </div>
       </main>
     </section>

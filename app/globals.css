@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+.custom-curved-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; /* Adjust based on your needs */
+  left: 0;
+  width: 100%;
+  height: 8px; /* Thickness of the underline */
+  /* background: linear-gradient(to right, #ff0878, #ff0878); */
+  border: solid 2px #ff0878;
+  border-color: #ff0878 transparent transparent transparent;
+  border-radius: 50%; /* Controls the curvature */
+}
+
 @font-face {
   font-family: 'Wotfard';
   src: url('/fonts/wotfard-regular-webfont.woff2'),
