@@ -14,16 +14,22 @@ import psql from '@/public/logos/postgresql.svg';
 import docker from '@/public/logos/docker.svg';
 import MyBlogs from '@/components/MyBlogs';
 import MyProjects from '@/components/MyProjects';
+import { ReportView } from '@/components/view';
+import PageViews from '@/components/page-views';
 
 export default function Home() {
   return (
     <section>
+      <ReportView slug={'home'} />
       <Header />
       <main className="mx-auto w-full max-w-3xl px-4 pt-4 md:px-12">
-        <h1 className="text-xl font-bold tracking-tight mt-3">
-          Hi! I&apos;m{' '}
-          <span className="text-[#617bff]">Yashwanth Kothakota 👋</span>
-        </h1>
+        <div className="flex items-center justify-between">
+          <h1 className="text-xl font-bold tracking-tight mt-3">
+            Hi! I&apos;m{' '}
+            <span className="text-[#617bff]">Yashwanth Kothakota 👋</span>
+          </h1>
+          <PageViews slug={'home'} />
+        </div>
         <div className="mt-10 flex items-center justify-center w-full gap-2">
           <div className="aspect-square w-1/2 overflow-hidden rounded-lg  shadow-lg transform hover:scale-105 transition-transform duration-200">
             <Image
