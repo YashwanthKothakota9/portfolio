@@ -21,7 +21,11 @@ export default async function MyBlogs() {
   return (
     <div className="w-full flex flex-col gap-6 items-center justify-center">
       {nodes.map((node: { node: Node }) => (
-        <Link key={node.node.title} href={node.node.url} className="group">
+        <Link
+          key={node.node.title}
+          href={node.node.url}
+          className="group border-b-[1px] pb-3"
+        >
           <div className="flex gap-2 items-start">
             <div className="w-2/5 overflow-hidden ">
               <Image
@@ -36,7 +40,7 @@ export default async function MyBlogs() {
               <h2 className="w-full font-semibold mb-3 break-words text-lg leading-tight group-hover:text-[#617bff] transform duration-300">
                 {node.node.title}
               </h2>
-              <p className="leading-5 block w-full break-words text-sm text-zinc-300">
+              <p className="leading-5 block w-full break-words text-sm text-zinc-300 text-justify">
                 {node.node.brief}
               </p>
               <div className="flex items-end justify-end gap-2 w-full">
