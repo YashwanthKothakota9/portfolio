@@ -3,13 +3,11 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { constructMetadata } from '@/lib/utils';
 
 // const inter = Inter({ subsets: ['latin'] });
 
-export const metadata: Metadata = {
-  title: 'Yashwanth K',
-  description: 'My Portfolio Website',
-};
+export const metadata: Metadata = constructMetadata();
 
 export default function RootLayout({
   children,
