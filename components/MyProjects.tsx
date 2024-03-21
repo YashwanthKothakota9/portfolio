@@ -53,8 +53,8 @@ export default function MyProjects() {
               src={project.demo}
               alt="Project Demo"
               width={220}
-              height={300}
-              className="object-cover w-full h-full rounded-lg"
+              height={350}
+              className="object-cover rounded-lg aspect-video"
               unoptimized
             />
           </div>

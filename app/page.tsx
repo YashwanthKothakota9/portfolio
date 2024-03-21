@@ -1,6 +1,6 @@
 import Header from '@/components/Header';
 import Image from 'next/image';
-import ProfilePic from '@/public/ProfilePic.jpg';
+import ProfilePic from '@/public/ProfilePic.jpeg';
 import CSS from '@/public/logos/css3.svg';
 import HTMl from '@/public/logos/html5.svg';
 import JS from '@/public/logos/javascript.svg';
@@ -31,26 +31,26 @@ export default function Home() {
           <PageViews slug={'home'} />
         </div>
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center w-full gap-2">
-          <div className="aspect-square w-full sm:w-1/2 overflow-hidden rounded-lg  shadow-lg transform hover:scale-105 transition-transform duration-200">
+          <div className="w-full sm:w-1/3 rounded-lg  shadow-lg transform hover:scale-105 transition-transform duration-200">
             <Image
               src={ProfilePic}
               alt="Profile picture"
               layout="responsive"
-              width={250}
-              height={250}
-              className="object-cover object-center rounded-lg"
+              width={200}
+              height={200}
+              className="object-cover w-48 h-48 rounded-lg aspect-square"
             />
           </div>
-          <div className="w-full sm:w-1/2 text-left p-2">
+          <div className="w-full sm:w-2/3 text-left p-2">
             <p className="text-sm sm:text-base leading-7 text-justify">
               I am a <span className="text-[#ff0878]">2023</span>{' '}
               <span className="text-[#ffe102]">Computer Science</span> Post
               Graduate from <span className="text-[#617bff]">BITS Pilani</span>.
-              I love developing software. I am proficient in{' '}
-              <span className="text-[#617bff]">Python</span>,{' '}
+              I love developing software. I have a good knowledge of{' '}
               <span className="text-[#617bff]">Javascript</span>,{' '}
               <span className="text-[#617bff]">Typescript</span>,{' '}
-              <span className="text-[#617bff]">SQL</span>. Having very good
+              <span className="text-[#617bff]">SQL</span>,{' '}
+              <span className="text-[#617bff]">Python</span>. Having very good
               foundation of CS core like Data Structures and Algorithms,
               Operating Systems, DBMS, Computer Networks help me to crack{' '}
               <span className="text-[#617bff]">GATE</span>. Willing to learn new
@@ -88,7 +88,7 @@ export default function Home() {
             </span>
             .
           </p>
-          <p className="text-sm sm:text-base leading-7 mt-2 text-justify">
+          <p className="text-sm sm:text-base leading-7 mt-4 text-justify">
             Backend developed in <span className="text-[#ff0878]">Python</span>{' '}
             using Pandas and Dataframes, For plots{' '}
             <span className="text-[#ff0878]">matplotlib</span> library is used,

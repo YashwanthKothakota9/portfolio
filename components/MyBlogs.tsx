@@ -32,8 +32,8 @@ export default async function MyBlogs() {
                 src={node.node.coverImage.url}
                 alt="Blog Cover Image"
                 width={220}
-                height={300}
-                className="object-cover rounded-lg w-full h-full"
+                height={350}
+                className="object-cover rounded-lg aspect-video"
               />
             </div>
             <div className="w-full sm:w-3/5">
