@@ -9,7 +9,7 @@ export function cn(...inputs: ClassValue[]) {
 export function constructMetadata({
   title = "Yashwanth Kothakota's Portfolio",
   description = 'I am a full stack developer from India',
-  image = '/og.png',
+  image = 'https://yashwanth-portfolio.vercel.app/og.png',
   noIndex = false,
 }: {
   title?: string;
