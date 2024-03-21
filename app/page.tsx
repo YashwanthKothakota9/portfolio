@@ -24,24 +24,25 @@ export default function Home() {
       <Header />
       <main className="mx-auto w-full max-w-3xl px-4 pt-4 md:px-12">
         <div className="flex items-center justify-between">
-          <h1 className="text-xl font-bold tracking-tight mt-3">
+          <h1 className="text-xl font-bold tracking-tight mt-3 sm:text-2xl">
             Hi! I&apos;m{' '}
             <span className="text-[#617bff]">Yashwanth Kothakota 👋</span>
           </h1>
           <PageViews slug={'home'} />
         </div>
-        <div className="mt-10 flex items-center justify-center w-full gap-2">
-          <div className="aspect-square w-1/2 overflow-hidden rounded-lg  shadow-lg transform hover:scale-105 transition-transform duration-200">
+        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center w-full gap-2">
+          <div className="aspect-square w-full sm:w-1/2 overflow-hidden rounded-lg  shadow-lg transform hover:scale-105 transition-transform duration-200">
             <Image
               src={ProfilePic}
               alt="Profile picture"
+              layout="responsive"
               width={250}
               height={250}
               className="object-cover object-center w-full h-full rounded-lg"
             />
           </div>
-          <div className="w-1/2 text-left p-2">
-            <p className="leading-7 text-justify">
+          <div className="w-full sm:w-1/2 text-left p-2">
+            <p className="text-sm sm:text-base leading-7 text-justify">
               I am a <span className="text-[#ff0878]">2023</span>{' '}
               <span className="text-[#ffe102]">Computer Science</span> Post
               Graduate from <span className="text-[#617bff]">BITS Pilani</span>.
@@ -61,11 +62,11 @@ export default function Home() {
         </div>
         <div className="mt-10 border-t-2 p-4">
           <div className="w-full flex items-center justify-center">
-            <h2 className="font-semibold text-2xl text-center mt-6 uppercase tracking-widest text-[#617bff] relative custom-curved-underline">
+            <h2 className="font-semibold text-xl sm:text-2xl text-center mt-6 uppercase tracking-widest text-[#617bff] relative custom-curved-underline">
               Work Experience
             </h2>
           </div>
-          <p className="leading-7 mt-2 text-justify">
+          <p className="text-sm sm:text-base leading-7 mt-2 text-justify">
             I worked as a{' '}
             <span className="text-[#ff0878]">Software Engineer Intern</span> at{' '}
             <span className="text-[#617bff]">Western Digital</span> for 6
@@ -87,7 +88,7 @@ export default function Home() {
             </span>
             .
           </p>
-          <p className="leading-7 mt-2 text-justify">
+          <p className="text-sm sm:text-base leading-7 mt-2 text-justify">
             Backend developed in <span className="text-[#ff0878]">Python</span>{' '}
             using Pandas and Dataframes, For plots{' '}
             <span className="text-[#ff0878]">matplotlib</span> library is used,
@@ -101,7 +102,7 @@ export default function Home() {
         </div>
         <div className="mt-6 p-6">
           <div className="w-full flex items-center justify-center">
-            <h2 className="font-semibold text-2xl text-center uppercase tracking-widest text-[#617bff] relative custom-curved-underline">
+            <h2 className="font-semibold text-xl sm:text-2xl text-center uppercase tracking-widest text-[#617bff] relative custom-curved-underline">
               Core Skills
             </h2>
           </div>
@@ -121,7 +122,7 @@ export default function Home() {
         </div>
         <div className="mt-6 p-6">
           <div className="w-full flex items-center justify-center">
-            <h2 className="w-fit font-semibold text-2xl text-center mb-6 uppercase tracking-widest text-[#617bff] relative custom-curved-underline">
+            <h2 className="w-fit font-semibold text-xl sm:text-2xl text-center mb-6 uppercase tracking-widest text-[#617bff] relative custom-curved-underline">
               My Projects
             </h2>
           </div>
@@ -129,7 +130,7 @@ export default function Home() {
         </div>
         <div className="mt-6 p-6">
           <div className="w-full flex items-center justify-center">
-            <h2 className="w-fit font-semibold text-2xl text-center mb-6 uppercase tracking-widest text-[#617bff] relative custom-curved-underline">
+            <h2 className="w-fit font-semibold text-xl sm:text-2xl text-center mb-6 uppercase tracking-widest text-[#617bff] relative custom-curved-underline">
               My Blogs
             </h2>
           </div>

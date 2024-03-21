@@ -46,35 +46,35 @@ export default function MyProjects() {
       {projects.map((project: Project) => (
         <div
           key={project.name}
-          className="flex gap-2 items-start border-b-[1px] pb-3"
+          className="flex flex-col sm:flex-row gap-4 sm:gap-2 items-center sm:items-start border-b-[1px] pb-3 w-full"
         >
-          <div className="w-2/5 overflow-hidden ">
+          <div className="w-full sm:w-2/5 overflow-hidden ">
             <Image
               src={project.demo}
               alt="Project Demo"
               width={220}
               height={300}
-              className="object-cover rounded-lg"
+              className="object-cover w-full h-full rounded-lg"
               unoptimized
             />
           </div>
 
-          <div className="w-3/5">
+          <div className="w-full sm:w-3/5 text-center sm:text-left">
             <h2 className="w-full font-semibold mb-3 break-words text-lg leading-tight transform duration-300">
               {project.name}
             </h2>
             <p className="leading-5 block w-full break-words text-sm text-zinc-300 text-justify">
               {project.brief}
             </p>
-            <div className="flex items-end justify-end gap-2 w-full">
+            <div className="flex flex-col sm:flex-row sm:items-end sm:justify-end justify-center gap-2 w-full mt-4 sm:mt-0">
               <Link href={project.github}>
-                <Button className="bg-[#617bff] hover:bg-[#30408d]">
+                <Button className="bg-[#617bff] hover:bg-[#30408d] text-white">
                   Github
                 </Button>
               </Link>
               {project.live && (
                 <Link href={project.live}>
-                  <Button className="bg-[#ff0878] hover:bg-[#9a0447]">
+                  <Button className="bg-[#ff0878] hover:bg-[#9a0447] text-white">
                     Live
                   </Button>
                 </Link>
