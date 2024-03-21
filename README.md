@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align='center'>
+    <h1 align='center'>Portfolio website</h1>
+    <h3>This is a personal website</h3>
+</div>
+
+<div align='center'>
+    <a href="https://yashwanth-portfolio.vercel.app/">My Portfolio</a>
+</div>
+
+<div align='center'>
+    <a href="https://twitter.com/Yashcsp22"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/Yashcsp22"></a>
+</div>
+
+<br/>
+
+This is my personal portfolio website. I want to make this as an open source so that anyone can use this as their template.
+
+## Demo
+
+![Notemaker Welcome GIF](.github/images/Notemaker.gif)
+
+## Tech Stack
+
+- [React](https://react.dev/) - Library for Frontend
+- [Typescript](https://www.typescriptlang.org/) – Language
+- [Tailwind](https://tailwindcss.com/) – CSS
+- [shadcn/ui](https://ui.shadcn.com) - UI Components
+- [Nextjs](https://nextjs.org/) - Frontend Framework
+- [Upstash](https://upstash.com/) - DB for Profile views
+- [Vercel](https://vercel.com/) - Hosting
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Here's what you need to be able to run NoteMaker:
+
+- Node.js (version >= 18)
+
+### 1. Clone the repository
+
+```shell
+git clone https://github.com/YashwanthKothakota9/portfolio.git
+cd portfolio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install npm dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```shell
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### 3. Copy the environment variables to `.env` and change the values
 
-## Learn More
+```shell
+cp .env.example .env
+```
 
-To learn more about Next.js, take a look at the following resources:
+copy your own `upstash redis` database `credentials`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Get your credentials [here](https://upstash.com/). I have used `Upstash Redis` to store the views count of profile.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### 4. Run the dev server
 
-## Deploy on Vercel
+```shell
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 5. Open the app in your browser
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Visit [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Contributing
+
+This is an open-source portfolio website template to showcase your work to the potential employers and contributions are very much welcome from the community.
+
+If you'd like to contribute, please fork the repository and make changes as you'd like. Pull requests are warmly welcome.

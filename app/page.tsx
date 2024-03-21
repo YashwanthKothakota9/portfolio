@@ -38,7 +38,7 @@ export default function Home() {
               layout="responsive"
               width={250}
               height={250}
-              className="object-cover object-center w-full h-full rounded-lg"
+              className="object-cover object-center rounded-lg"
             />
           </div>
           <div className="w-full sm:w-1/2 text-left p-2">
