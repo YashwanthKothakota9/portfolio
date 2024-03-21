@@ -17,7 +17,7 @@ This is my personal portfolio website. I want to make this as an open source so 
 
 ## Demo
 
-![Notemaker Welcome GIF](.github/images/Notemaker.gif)
+![Portfolio Welcome GIF](.github/images/portfolio.gif)
 
 ## Tech Stack
 

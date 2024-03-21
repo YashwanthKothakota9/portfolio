@@ -42,7 +42,6 @@ export function constructMetadata({
       creator: '@Yashcsp22',
     },
     metadataBase: new URL('https://yashwanth-portfolio.vercel.app'),
-    themeColor: '#FFF',
     ...(noIndex && {
       robots: {
         index: false,
