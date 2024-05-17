@@ -47,16 +47,17 @@ export default function Home() {
               <span className="text-[#ffe102]">Computer Science</span> Post
               Graduate from <span className="text-[#617bff]">BITS Pilani</span>.
               I love developing software. I have a good knowledge of{' '}
-              <span className="text-[#617bff]">Javascript</span>,{' '}
-              <span className="text-[#617bff]">Typescript</span>,{' '}
+              <span className="text-[#617bff]">Python</span>,{' '}
               <span className="text-[#617bff]">SQL</span>,{' '}
-              <span className="text-[#617bff]">Python</span>. Having very good
-              foundation of CS core like Data Structures and Algorithms,
+              <span className="text-[#617bff]">Javascript</span>,{' '}
+              <span className="text-[#617bff]">Typescript</span>. Having very
+              good foundation of CS core like Data Structures and Algorithms,
               Operating Systems, DBMS, Computer Networks help me to crack{' '}
               <span className="text-[#617bff]">GATE</span>. Willing to learn new
               technologies. Experienced in Agile methodologies and eager to
               contribute in fast paced development team. I am actively looking
-              for Software Developer roles.
+              for <span className="text-[#ff0878]">Data Analyst</span> and{' '}
+              <span className="text-[#ff0878]">Software Developer</span> roles.
             </p>
           </div>
         </div>
@@ -107,6 +108,8 @@ export default function Home() {
             </h2>
           </div>
           <div className="flex flex-wrap gap-3 items-center justify-center mt-4">
+            <Image src={py} alt="Python" className="h-8 w-8" />
+            <Image src={psql} alt="PostgreSQL" className="h-8 w-8" />
             <Image src={HTMl} alt="CSS" className="h-8 w-8" />
             <Image src={CSS} alt="CSS" className="h-8 w-8" />
             <Image src={JS} alt="Javascript" className="h-8 w-8" />
@@ -115,8 +118,6 @@ export default function Home() {
             <Image src={rdx} alt="Redux" className="h-8 w-8" />
             <Image src={node} alt="Node.js" className="h-8 w-8" />
             <Image src={mdb} alt="MongoDB" className="h-8 w-8" />
-            <Image src={psql} alt="PostgreSQL" className="h-8 w-8" />
-            <Image src={py} alt="Python" className="h-8 w-8" />
             <Image src={docker} alt="Docker" className="h-8 w-8" />
           </div>
         </div>
